@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rusy</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Wyatt</td>
+                <td>13</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <!-- Forms -->
+    <div>
+        <h1>Login</h1>
+        <form>
+            <div>
+                <label for="email">Username:</label>
+                <input id="email" type="email" placeholder="username" required>
+                <label for="password">Password:</label>
+                <input id="password" type="password" placeholder="password" required>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="remember">remember me!</label>
+                <input type="submit" name="Submit">
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <p>Do you prefer cats or dogs</p>
+        <form>
+            <label for="dogs">Dogs:</label>
+            <input value="dogs" type="radio" name="petChoices" id="dogs">
+            <label for="cats">Cats:</label>
+            <input value="cats" type="radio" name="petChoices" id="cats">
+            <p>Favorite Color!</p>
+            <select name="color">
+                <option value="Red">Red</option>
+                <option value="Orange">Orange</option>
+                <option value="Yellow">Yellow</option>
+            </select>
+            <button>Go!</button>
+        </form>
+
+        <!-- Exercise Form -->
+        <div>
+            <h1>Register</h1>
+            <form>
+
+                <br>
+                <label for="first_name">First Name:</label>
+                <input id="first_name" type="text" name="firstName" required>
+
+                <label for="last_name">Last Name:</label>
+                <input id="last_name" type="text" name="lastName" required>
+                <br>
+                <label for="Male">Male:</label>
+                <input type="radio" id="Male" name="gender" value="male">
+                <label for="Female">Female:</label>
+                <input type="radio" id="Female" name="gender" value="female">
+
+                <label for="Other">Other:</label>
+                <input type="radio" id="Other" name="gender" value="other">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="password" pattern=".{5,10}" required
+                    title="5 to 10 characters" required>
+                <br>
+                <label for="birthday_id">
+                    Birthday:
+                    <input id="birthday_id" type="date" value="2020-08-09" name="date">
+                </label>
+                <br>
+                <label for="agreed">Agreed:</label>
+                <input type="checkbox" name="agreed" id="agreed" value="yes">
+                <br>
+                <input type="Submit">
+            </form>
+        </div>
+    </div>
+    <script src="" async defer></script>
+</body>
+
+</html>
