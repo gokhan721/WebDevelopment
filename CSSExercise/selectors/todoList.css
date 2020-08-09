@@ -1,0 +1,11 @@
+li {
+    border: 2px solid red;
+}
+
+#lastLi {
+    background: yellow;
+}
+
+.completed {
+    text-decoration: overline;
+}
