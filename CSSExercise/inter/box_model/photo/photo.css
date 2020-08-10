@@ -1,0 +1,15 @@
+img {
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+p {
+    margin-left: 1.66%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(207, 206, 206);
+    width: 30%;
+    padding-bottom: 1em;
+}

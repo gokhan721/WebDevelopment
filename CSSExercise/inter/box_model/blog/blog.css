@@ -1,0 +1,25 @@
+.container {
+    border: 15px solid rgb(199, 195, 195);
+    width: 50%;
+    margin-left: 25%;
+}
+
+.date {
+    color: rgb(29, 135, 177);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.article {
+    margin: 2%;
+}
+
+.first_para {
+    border-left: 5px solid gray;
+    padding-left: 1%;
+}
+
+.article p:nth-last-of-type(1) {
+    border-bottom: 1px solid rgb(136, 117, 117);
+    padding-bottom: 1em;
+}
