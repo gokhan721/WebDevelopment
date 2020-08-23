@@ -1,0 +1,84 @@
+Primitives:
+- Numbers
+- Strings
+- Boolean
+- null
+- undefined
+
+
+
+Variables:
+
+var variableName = Value;
+
+    - Scoped "current execution context"
+
+        - function greet() {
+            for(var i= 0; i< 3; i++) {
+                console.log("Hello");
+            }
+            console.log(i) // print 3
+        }
+
+    - Can be reassigned/redeclared
+    - Global variables are added to window
+
+let variableName = Value;
+
+    - Block Scoped
+        - function greet() {
+                for(let i= 0; i< 3; i++) {
+                    console.log("Hello");
+                }
+                console.log(i) // Gives error
+            }
+    - Not created property on global, window object
+    - Can be reassigned
+    - Can not be redeclared(in same scope)
+
+const variableName = Value;
+
+    - Can not be reassigned. Not immutable, but variable reference cannot change
+    - Block scope
+    - Must be initialized with value
+    - Not create property on global window object
+    - Not be redeclared
+
+
+
+ Built-in Methods:
+
+ - Alert
+ - Prompt // get input from user
+ - console.log()   // print to console
+
+
+ Boolean Logic
+
+ == Equal to
+
+ === Equal value and type
+
+
+ Logical Operators:
+
+ && And
+
+ || OR
+
+ ! NOT
+
+ Not: Every value in js inherently truthy or falsy.
+    - Ex: !"Hello World", !"", !null, !0, !-1, !NaN
+    - Falsy values: false, 0, "", null, undefined, NaN
+
+
+LOOPS:
+
+while(condition) {
+    // code
+}
+
+for - loops throuh a block of code numbers of times
+for/in - loops throug the properties of an object
+for/of - loop through the values of an iterable object
