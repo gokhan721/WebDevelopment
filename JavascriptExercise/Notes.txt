@@ -82,3 +82,25 @@ while(condition) {
 for - loops throuh a block of code numbers of times
 for/in - loops throug the properties of an object
 for/of - loop through the values of an iterable object
+
+
+Functions:
+
+function funcName(args){ //code }
+
+
+//self invoking function expression
+(function sayHello() {
+    alert("hello!");
+})();
+
+Function declaration :
+    function funcName(){}
+Function expression: 
+    var f = function funcName(){}
+
+Notes : 
+ - "https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/"
+ - Only functions create new scope
+ - Hoisting
+
