@@ -104,3 +104,14 @@ Notes :
  - Only functions create new scope
  - Hoisting
 
+Arrays(https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays):
+
+var arrayName = [values...];
+var arrayName = new Array();
+
+Some of Array Methods:
+- pusp/pop => push: add element end and return length of array. pop: remove last item and return removed item.
+- shift/unshift => adding(unshift) and removing(shift) front of an array.
+- indexOf => index of an item in an array
+- slice => copy part of an array
+** For more built-in function look array.__proto__ from console.
