@@ -115,3 +115,38 @@ Some of Array Methods:
 - indexOf => index of an item in an array
 - slice => copy part of an array
 ** For more built-in function look array.__proto__ from console.
+
+
+Objects:
+
+//JSON(Javascript object notation)
+var person = {
+    name: "PersonName",
+    age: PersonAge,
+    city: PersonLivedCity
+};
+
+- Access property in class => person.name or person["name"]
+
+
+Creating Objects:
+
+// Empty object and fill it
+var person = {};
+person.name = PersonName;
+
+// all at once
+var person = {
+    name: "PersonName",
+    age: PersonAge,
+    city: PersonLivedCity
+};
+
+// with constructor of Object
+var person = new Object();
+person.name = PersonName
+
+// with constructor function
+function Person(name, age, city){
+    [this.name, this.age, this.city] = [name, age, city]; //unpacking in python
+}
