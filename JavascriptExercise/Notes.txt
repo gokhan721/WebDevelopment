@@ -139,7 +139,10 @@ person.name = PersonName;
 var person = {
     name: "PersonName",
     age: PersonAge,
-    city: PersonLivedCity
+    city: PersonLivedCity,
+    getCity: function(){
+        return this.city;
+    }
 };
 
 // with constructor of Object
@@ -150,3 +153,15 @@ person.name = PersonName
 function Person(name, age, city){
     [this.name, this.age, this.city] = [name, age, city]; //unpacking in python
 }
+
+underscore.js (https://underscorejs.org/) to call function with _.func()
+
+
+Prototype:
+
+- All js objects inherit properties and methods from a prototype.
+- To add constructor method or properties used prototype.
+    Ex:
+        function Person(first, last){this.first = first; this.last = last;};
+        Person.prototype.age = 5;
+        Person.prototype.name = function(){return this.first + this.last}
