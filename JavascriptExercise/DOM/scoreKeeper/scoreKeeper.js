@@ -16,6 +16,7 @@ playing_to_score.addEventListener("input", function (e) {
     var value = e.target.value ? e.target.value : 0;
     playing_to.textContent = "Playing to: " + value;
     winnigScore = value;
+    reset();
 });
 
 player_one_button.addEventListener("click", function () {
@@ -31,6 +32,7 @@ player_two_button.addEventListener("click", function () {
 
 function updateScoreBoard(player) {
     player === "playerone" ? p1Score++ : p2Score++;
+    console.log(winnigScore);
     if (p1Score == winnigScore) {
         game_over = true;
         p1_score.classList.add("winner");
@@ -45,6 +47,10 @@ function updateScoreBoard(player) {
 }
 
 reset_button.addEventListener("click", function () {
+    reset();
+});
+
+function reset() {
     p1Score = 0;
     p2Score = 0;
     p1_score.textContent = p1Score;
@@ -54,4 +60,4 @@ reset_button.addEventListener("click", function () {
     p1_score.classList.remove("winner");
     p2_score.classList.remove("winner");
     playing_to_score.removeAttribute("disabled");
-});
+};
