@@ -1,0 +1,34 @@
+DOM (Document Object Model)
+
+- Between JS and HMTL/CSS
+- Tree model of HTML
+- Two process: Select(document.querySelector($tag)), Manipulate
+
+DOM Selectors:
+
+- document.getElementyById()
+- document.getElementsByClassName()
+- document.getElementsByTagName()
+- document.querySelector("CSS Selector")
+- document.querySelectorAll("Css Selector")
+
+DOM Manipulation:
+
+- changing an element's style
+    - Separation of Concerns (structure, behavior, presentation) 
+    - Craete a class in CSS File, then add it to "classList" of selected object.
+
+- changing textContent, innerHTML
+    - Overrides current text or html!!!
+
+- changing attributes
+    - getAttribute("property(href, src etc.)")
+    - setAttribute("property(href, src etc)", "attribute") 
+
+
+DOM Events:
+
+- Making thins interactive(click, hover, drag&drop, press keys)
+- Select element add an event listener.(func addEventListener(method, func))
+
+Not: classList.toogle("class");
