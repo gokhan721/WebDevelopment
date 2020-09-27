@@ -1,0 +1,62 @@
+What is JQuery ?
+
+- Helps manipulating DOM.
+- JS library.
+- Traversal & manipulation DOM, event handling, animation and AJAX(HTTP Request) API.
+
+
+Why not Use JQuery ?
+
+- youmightnotneedjquery.com (JS code stands in Jquery API)
+- Unnecessary dependecy
+- Performance
+
+Select Object:
+- $("selectorGoeshere") // Css Selector in querySelectorAll!!!
+
+Style:
+- .css() to style elements
+
+var  style = {"Css properties"}
+$("selector").css(style) 
+
+Some jquery function:
+
+- val()
+- text()
+- attr()
+- html()
+- addClass()
+- removeClass()
+- toggleClass()
+- .first()
+- .last()
+
+Some Events Methods:
+
+- click() // only adds listener for existing elements
+- keypress() // listen any keypress of any input
+- on() // add listeners for all potential future elements
+
+Ex:
+    $("button").click(function(){
+        $(this).css("background", "pink");
+    })
+
+    $("input").keypress(function(event){
+        if (event.which === keyCode){
+            ...
+        }
+    })
+
+    $("selector").on("click", function(){
+        ...
+    })
+
+Some Effect Methods:
+
+
+- fadeIn()
+- fadeOut()
+- fadeToggle()
+- slideDown();
