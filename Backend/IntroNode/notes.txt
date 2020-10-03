@@ -1,0 +1,17 @@
+What is Node?
+
+    - JS runtime built on Chrome's V8 JS engine
+    - An event-driven, non-blocking I/O model, lightweight and efficient
+    - NPM(Node package manager)
+    - JS can be used into server(backend)
+
+
+    - Interaction from terminal (node)
+    - Run file on node(node <filename>)
+    - Browser specific elements(Document, alert ,eventListeners) not idenfied into nodejs.
+
+NPM(Node package manager)
+
+    - Package manager for JS
+    - npm install <moduleName>
+    - "require()" to include installed modules to js
