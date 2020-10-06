@@ -1,0 +1,5 @@
+What is EJS?
+
+- Embeded javascript
+- <% %> It is not added to HTML such as loops, control flow etc.
+- <%= %> Returns HTML whatever inside in it
