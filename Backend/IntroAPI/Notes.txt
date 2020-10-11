@@ -1,0 +1,13 @@
+- Application Programmable Interface
+- Interface for code/computer to talk to one another.
+- ifttt.com
+- stackshare.io
+- programmableweb.com
+
+- request package has been deprecated. Axios should be used!!
+
+DATA Format
+
+- API's don't respond with HTML.API's respond with data like XML and JSON.
+- XML => Extended Markup Language
+- JSON => Javascript Object Notation(Everything is a string)
