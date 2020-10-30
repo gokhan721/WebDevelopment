@@ -101,3 +101,73 @@ setTimeout(() => {
 const id = setInterval(() => {
     console.log("Interval...");
 }, 2000);
+
+// Newer JS  features
+
+// Default Params
+
+function rollDieDefault(numSides = 6) {
+    return Math.floor(Math.random() * numSides) + 1;
+}
+
+// Spread Function (...value)
+
+const spread_arr = [13, 4, 6, 7, 545, 8, 4];
+
+console.log(`Max el of spread_arr: ${Math.max(...spread_arr)}`);
+
+const cats = ['Blue', 'Scout', 'Rocket'];
+const dogs = ['Rusty', 'Wyatt'];
+
+const animal = [...cats, ...dogs];
+console.log(`Spreaded animal: ${animal}`);
+
+console.log(`Spreaded string hello: ${[..."hello"]}`);
+
+// Spread Objects properties
+
+const feline = { legs: 4, family: 'Felidae' };
+const canine = { isFurry: true, family: 'Caninae' };
+
+const catDog = { ...feline, ...canine } // order matters!!! Last object get common key!!!
+
+console.log(`catDog feline->canine: ${JSON.stringify(catDog)}`);
+console.log(`catDog canine -> feline: ${JSON.stringify({ ...canine, ...feline })}`);
+
+// REST Store all parameters in an array
+
+function sum(...values) {
+    return values.reduce((a, b) => a + b);
+}
+
+// Destructuring (A short clean syntax for unpacking)
+
+const [first, second, ...reminders] = numbers;
+console.log(`first num: ${first} `);
+console.log(`second num: ${second} `);
+console.log(`reminders num: ${reminders} `);
+
+const { title, score } = movies[0];
+console.log(`Title: ${title}`);
+console.log(`Score: ${score}`);
+
+// Rename key value
+const { score: like } = movies[1];
+console.log(`Score is changed to like: ${like}`);
+
+// Pull out and assign default value
+const { director = 'Steven Spielberg' } = movies[0];
+console.log(`Director Movie: ${director}`);
+
+const user = {
+    first: "Bambam",
+    last: "Cakil",
+    address: "blablabla"
+}
+
+
+function fullName({ first, last }) {
+    return `${first} ${last}`;
+}
+
+console.log(movies.filter(({ score }) => score > 90));
