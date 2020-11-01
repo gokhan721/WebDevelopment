@@ -1,5 +1,6 @@
 {
-    "files.associations": {
-        "*.ejs": "html"
-    }
+    "editor.codeActionsOnSave": null,
+    "emmet.includeLanguages": {
+        "ejs": "html",
+    },
 }

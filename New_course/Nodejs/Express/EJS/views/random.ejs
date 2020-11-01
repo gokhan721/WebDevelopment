@@ -1,0 +1,9 @@
+<%- include('partials/head') %>
+
+<% if (rand % 2 === 0) { %>
+<h1>Your even random number: <%= rand %></h1>
+<% } else { %>
+<h1>Your odd random number: <%= rand %></h1>
+<% } %>
+
+<%- include('partials/footer') %>
