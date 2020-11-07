@@ -1,0 +1,22 @@
+GET METHOD:
+    - Used to retrieve info
+    - Data is sent via query strnig
+    - Info is plainly visible in the URL
+    - Limited amount of data can be sent
+    - Bookmarkable
+
+POST METHOD:
+    - Used to post data to the server
+    - Used to write/create/update
+    - Data is sent via request body
+    - Can sen any sort of data(JSON!)
+    - Query string also can be used
+
+
+WTF IS REST:
+    - Representational State Transfer
+    - Architectural style for distributed hypermedia systems
+    - Set of guidelines for how a client-server communicate and 
+        perform CRUD operations on a given resource.
+    - Most common wa y of approaching REST is in formatting the URLS and
+        HTTP verbs in your app.
