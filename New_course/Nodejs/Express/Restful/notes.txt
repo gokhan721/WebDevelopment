@@ -12,6 +12,13 @@ POST METHOD:
     - Can sen any sort of data(JSON!)
     - Query string also can be used
 
+PUT METHOD:
+    - Replace all currrent representation of resource with the request
+        payload
+
+PATCH METHOD:
+    - Partially modification of resource
+
 
 WTF IS REST:
     - Representational State Transfer
